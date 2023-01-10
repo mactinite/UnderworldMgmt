@@ -45,6 +45,12 @@ public class PlayerControllerInput : MonoBehaviour
         input.actions["Cancel"].performed += OnCancelPerformed;
     }
 
+    private void OnDisable()
+    {
+        input.actions["Attack"].performed -= OnPerformed;
+        input.actions["Cancel"].performed -= OnCancelPerformed;
+    }
+
     private void OnCancelPerformed(InputAction.CallbackContext obj)
     {
         if (BuildManager.Instance.buildingMode)

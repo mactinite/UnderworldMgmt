@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sould Harvest Gate
   m_EditorClassIdentifier: 
   buildingName: Soul Harvest Gate
-  description: A gate to the overworld where your demons can harvest <b>Souls</b>
+  description: Can be occupied by a Demon to farm souls.
   buildingPrefab: {fileID: 400489450, guid: 61662c4d202af4b489e603f7d80de104, type: 3}
   Costs:
   - ResourceType: Brimstone

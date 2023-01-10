@@ -17,4 +17,4 @@ MonoBehaviour:
   buildingPrefab: {fileID: 90603710176883878, guid: bea9a52b3ac7aa449a2ff4a49d91c8fb, type: 3}
   Costs:
   - ResourceType: Brimstone
-    Amount: 100
+    Amount: 50

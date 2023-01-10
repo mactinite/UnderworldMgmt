@@ -50,6 +50,11 @@ public class BuildManager : MonoBehaviour
         RenderUI();
     }
 
+    private void OnDestroy()
+    {
+        
+    }
+
     private void Update()
     {
         Vector3 worldCursorPosition = input.cursor.position;

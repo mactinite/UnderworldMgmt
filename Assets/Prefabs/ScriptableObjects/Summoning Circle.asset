@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Summoning Circle
   m_EditorClassIdentifier: 
   buildingName: Summoning Circle
-  description: 'Summon a low level demon to do your bidding. Also serves as a place
-    for a '
+  description: Summon a new Demon and provide them a place to rest.
   buildingPrefab: {fileID: 2113585736, guid: b375a704bd7f1ec4597aa292e87318e8, type: 3}
   Costs:
   - ResourceType: Brimstone

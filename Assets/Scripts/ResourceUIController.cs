@@ -7,13 +7,10 @@ using UnityEngine.UI;
 
 public class ResourceUIController : MonoBehaviour
 {
-    [SerializeField]
-    private Transform resourceUILayout;
-    [SerializeField]
-    private Transform resourceUIPrefab;
+    [SerializeField] private Transform resourceUILayout;
+    [SerializeField] private Transform resourceUIPrefab;
     private Dictionary<string, Transform> resourceUIMapping = new Dictionary<string, Transform>();
-    [SerializeField]
-    private bool showPanel = true;
+    [SerializeField] private bool showPanel = true;
 
     private void Start()
     {
@@ -21,11 +18,16 @@ public class ResourceUIController : MonoBehaviour
         resourceUILayout.gameObject.SetActive(showPanel);
     }
 
+    void OnDestroy()
+    {
+        ResourceManager.Instance.OnResourceUpdated -= OnResourceUpdated;
+    }
+
     private void OnResourceUpdated(Tuple<string, int> delta)
     {
         string resourceType = delta.Item1;
         int newAmount = delta.Item2;
-        
+
         if (resourceUIMapping.TryGetValue(delta.Item1, out var uiElement))
         {
             var tmp = uiElement.GetChild(1).GetComponent<TMP_Text>();
@@ -39,15 +41,15 @@ public class ResourceUIController : MonoBehaviour
             var image = newUiElement.GetChild(0).GetComponent<Image>();
             image.sprite = ResourceManager.Instance.resourceIcons[resourceType];
             tmp.text = $"{resourceType}: {newAmount}";
-            
+
             resourceUIMapping.Add(resourceType, newUiElement);
         }
     }
+
     public void TogglePanel()
     {
         showPanel = !showPanel;
-        
+
         resourceUILayout.gameObject.SetActive(showPanel);
     }
-
 }

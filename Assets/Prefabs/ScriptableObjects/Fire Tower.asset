@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fire Tower
   m_EditorClassIdentifier: 
   buildingName: Sentry Tower
-  description: Fires magic seeking projectiles at the enemy
+  description: Damages invaders
   buildingPrefab: {fileID: 409063556, guid: 65ff1a37331fff6489e403299308392e, type: 3}
   Costs:
   - ResourceType: Brimstone

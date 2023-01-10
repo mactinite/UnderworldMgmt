@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: BrimstoneMine
   m_EditorClassIdentifier: 
   buildingName: Brimstone Mine
-  description: A place to mine brimstone
+  description: nCan be occupied by a Demon to farm <b>Brimstone<b>.
   buildingPrefab: {fileID: 906182535, guid: c9fe541388fdd83458ba7d0058963672, type: 3}
   Costs:
   - ResourceType: Brimstone
-    Amount: 200
+    Amount: 150
   - ResourceType: Death Bramble
     Amount: 50
