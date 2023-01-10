@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e838820f3f444b4e8c6de0e728fd400, type: 3}
+  m_Name: BrimstoneMine
+  m_EditorClassIdentifier: 
+  buildingName: Brimstone Mine
+  description: A place to mine brimstone
+  buildingPrefab: {fileID: 906182535, guid: c9fe541388fdd83458ba7d0058963672, type: 3}
+  Costs:
+  - ResourceType: Brimstone
+    Amount: 200
+  - ResourceType: Death Bramble
+    Amount: 50

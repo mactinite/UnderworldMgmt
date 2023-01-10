@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e838820f3f444b4e8c6de0e728fd400, type: 3}
+  m_Name: Summoning Circle
+  m_EditorClassIdentifier: 
+  buildingName: Summoning Circle
+  description: 'Summon a low level demon to do your bidding. Also serves as a place
+    for a '
+  buildingPrefab: {fileID: 2113585736, guid: b375a704bd7f1ec4597aa292e87318e8, type: 3}
+  Costs:
+  - ResourceType: Brimstone
+    Amount: 50
